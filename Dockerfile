@@ -16,5 +16,8 @@ COPY . .
 # Expor porta
 EXPOSE 3000
 
+# Desabilitar health check para evitar problemas na Coolify
+HEALTHCHECK NONE
+
 # Comando default para iniciar seu servidor
 CMD ["node", "server.js"]
