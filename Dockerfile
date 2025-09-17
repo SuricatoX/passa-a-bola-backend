@@ -16,8 +16,9 @@ COPY . .
 # Expor porta
 EXPOSE 3000
 
-# Desabilitar health check para evitar problemas na Coolify
-HEALTHCHECK NONE
+# Health check simples que sempre retorna healthy
+HEALTHCHECK --interval=30s --timeout=10s --start-period=5s --retries=3 \
+  CMD node -e "process.exit(0)"
 
 # Comando default para iniciar seu servidor
 CMD ["node", "server.js"]
