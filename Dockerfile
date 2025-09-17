@@ -1,6 +1,9 @@
 # Dockerfile para o Backend (Node.js + Express)
 FROM node:18-alpine
 
+# Instalar curl para health check
+RUN apk add --no-cache curl
+
 # Definir diretório de trabalho
 WORKDIR /app
 
@@ -24,9 +27,9 @@ USER nodejs
 # Expor porta
 EXPOSE 3001
 
-# Health check
-HEALTHCHECK --interval=30s --timeout=3s --start-period=5s --retries=3 \
-  CMD node -e "require('http').get('http://localhost:3001/api/health', (res) => { process.exit(res.statusCode === 200 ? 0 : 1) })"
+# Health check usando curl
+HEALTHCHECK --interval=30s --timeout=10s --start-period=40s --retries=3 \
+  CMD curl -f http://localhost:3001/api/health || exit 1
 
 # Comando para iniciar a aplicação
 CMD ["node", "server.js"]
