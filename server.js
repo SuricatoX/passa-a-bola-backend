@@ -13,11 +13,11 @@ app.use(express.json());
 const featuredArticles = [
   {
     id: 1,
-    title: "Brazil Women's Team Advances to Final",
-    byline: "Maria Santos • 2 hours ago",
+    title: "Seleção Brasileira Feminina Avança para a Final",
+    byline: "Maria Santos • há 2 horas",
     image: "https://images.unsplash.com/photo-1574629810360-7efbbe195018?w=400&h=300&fit=crop&crop=center",
-    content: "The Brazilian women's national team secured their place in the championship final with a stunning 3-1 victory over their rivals. The team showed exceptional teamwork and determination throughout the match.",
-    category: "Championship",
+    content: "A seleção brasileira feminina garantiu sua vaga na final do campeonato com uma vitória impressionante de 3-1 sobre suas rivais. A equipe mostrou trabalho em equipe excepcional e determinação durante toda a partida.",
+    category: "Campeonato",
     publishedAt: new Date(Date.now() - 2 * 60 * 60 * 1000).toISOString(), // 2 hours ago
     author: {
       name: "Maria Santos",
@@ -26,11 +26,11 @@ const featuredArticles = [
   },
   {
     id: 2,
-    title: "Rising Star: Ana Silva's Journey",
-    byline: "Carlos Mendes • 5 hours ago",
+    title: "Estrela em Ascensão: A Jornada de Ana Silva",
+    byline: "Carlos Mendes • há 5 horas",
     image: "https://images.unsplash.com/photo-1551698618-1dfe5d97d256?w=400&h=300&fit=crop&crop=center",
-    content: "Ana Silva's remarkable journey from local leagues to national recognition has been nothing short of inspirational. Her dedication and skill have made her one of the most promising talents in women's football.",
-    category: "Player Profile",
+    content: "A jornada notável de Ana Silva das ligas locais ao reconhecimento nacional tem sido nada menos que inspiradora. Sua dedicação e habilidade a tornaram uma das talentos mais promissores do futebol feminino.",
+    category: "Perfil de Jogadora",
     publishedAt: new Date(Date.now() - 5 * 60 * 60 * 1000).toISOString(), // 5 hours ago
     author: {
       name: "Carlos Mendes",
@@ -39,11 +39,11 @@ const featuredArticles = [
   },
   {
     id: 3,
-    title: "Championship Preview: What to Expect",
-    byline: "Lucia Oliveira • 1 day ago",
+    title: "Prévia do Campeonato: O Que Esperar",
+    byline: "Lucia Oliveira • há 1 dia",
     image: "https://images.unsplash.com/photo-1560272564-c83b66b1ad12?w=400&h=300&fit=crop&crop=center",
-    content: "As the championship approaches its climax, we analyze the key factors that will determine the outcome. From team strategies to individual performances, here's what to watch for in the upcoming matches.",
-    category: "Analysis",
+    content: "Conforme o campeonato se aproxima do clímax, analisamos os fatores-chave que determinarão o resultado. Das estratégias das equipes às performances individuais, aqui está o que observar nas próximas partidas.",
+    category: "Análise",
     publishedAt: new Date(Date.now() - 24 * 60 * 60 * 1000).toISOString(), // 1 day ago
     author: {
       name: "Lucia Oliveira",
@@ -52,11 +52,11 @@ const featuredArticles = [
   },
   {
     id: 4,
-    title: "New Training Facilities Open for Women's Teams",
-    byline: "Roberto Silva • 2 days ago",
+    title: "Novas Instalações de Treinamento Abrem para Equipes Femininas",
+    byline: "Roberto Silva • há 2 dias",
     image: "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=400&h=300&fit=crop&crop=center",
-    content: "State-of-the-art training facilities have been inaugurated, providing women's teams with world-class infrastructure to develop their skills and compete at the highest level.",
-    category: "Infrastructure",
+    content: "Instalações de treinamento de última geração foram inauguradas, fornecendo às equipes femininas infraestrutura de classe mundial para desenvolver suas habilidades e competir no mais alto nível.",
+    category: "Infraestrutura",
     publishedAt: new Date(Date.now() - 2 * 24 * 60 * 60 * 1000).toISOString(), // 2 days ago
     author: {
       name: "Roberto Silva",
@@ -65,11 +65,11 @@ const featuredArticles = [
   },
   {
     id: 5,
-    title: "Youth Development Program Shows Promising Results",
-    byline: "Fernanda Costa • 3 days ago",
+    title: "Programa de Desenvolvimento Juvenil Mostra Resultados Promissores",
+    byline: "Fernanda Costa • há 3 dias",
     image: "https://images.unsplash.com/photo-1544717297-fa95b6ee9643?w=400&h=300&fit=crop&crop=center",
-    content: "The new youth development program has already produced several talented players who are making their mark in professional leagues. This initiative is shaping the future of women's football.",
-    category: "Development",
+    content: "O novo programa de desenvolvimento juvenil já produziu várias jogadoras talentosas que estão se destacando nas ligas profissionais. Esta iniciativa está moldando o futuro do futebol feminino.",
+    category: "Desenvolvimento",
     publishedAt: new Date(Date.now() - 3 * 24 * 60 * 60 * 1000).toISOString(), // 3 days ago
     author: {
       name: "Fernanda Costa",
