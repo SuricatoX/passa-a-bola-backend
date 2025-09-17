@@ -133,11 +133,13 @@ app.get('/api/health', (req, res) => {
   });
 });
 
-// Rota raiz
+// Rota raiz para health check da Coolify
 app.get('/', (req, res) => {
-  res.json({
+  res.status(200).json({
+    status: 'ok',
     message: 'Passa a Bola API',
     version: '1.0.0',
+    timestamp: new Date().toISOString(),
     endpoints: {
       featuredArticles: '/api/featured-articles',
       articleById: '/api/articles/:id',
