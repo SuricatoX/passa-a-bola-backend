@@ -14,7 +14,7 @@ RUN npm install --production
 COPY . .
 
 # Expor porta
-EXPOSE 3001
+EXPOSE 3000
 
 # Comando default para iniciar seu servidor
 CMD ["node", "server.js"]
